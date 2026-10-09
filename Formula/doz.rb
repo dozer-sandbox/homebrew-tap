@@ -9,9 +9,9 @@
 class Doz < Formula
   desc "Fast, suspendable Linux sandboxes (micro-VMs) for your Mac"
   homepage "https://github.com/dozer-sandbox/dozer-sandbox"
-  url "https://github.com/dozer-sandbox/dozer-sandbox/releases/download/v0.31.1/doz-0.31.1-macos-arm64.tar.gz"
-  version "0.31.1"
-  sha256 "5469425710738c785021b4220024967c975afedc6cc4a9b4975c1625729fd202"
+  url "https://github.com/dozer-sandbox/dozer-sandbox/releases/download/v0.32.0/doz-0.32.0-macos-arm64.tar.gz"
+  version "0.32.0"
+  sha256 "c8b3c5d27715306d6b097abe7c8b3dcc89e40511a220d6f995da572b7b516ce8"
   license "MIT"
 
   conflicts_with "doz-beta", because: "it installs the same doz command (another release channel)"
