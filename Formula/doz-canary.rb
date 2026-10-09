@@ -9,9 +9,9 @@
 class DozCanary < Formula
   desc "Fast, suspendable Linux sandboxes (micro-VMs) for your Mac"
   homepage "https://github.com/dozer-sandbox/dozer-sandbox"
-  url "https://github.com/dozer-sandbox/dozer-sandbox/releases/download/v0.32.0-rc.2/doz-0.32.0-rc.2-macos-arm64.tar.gz"
-  version "0.32.0-rc.2"
-  sha256 "56f78a477828e15518f4738f564a82aab7ef59c47d8f1b86e10aabf5402ce001"
+  url "https://github.com/dozer-sandbox/dozer-sandbox/releases/download/v0.32.0-rc.3/doz-0.32.0-rc.3-macos-arm64.tar.gz"
+  version "0.32.0-rc.3"
+  sha256 "38c7cd23672b9e9152068dc744e79320433eb8a8d375c432efe875cb048e9409"
   license "MIT"
 
   conflicts_with "doz", because: "it installs the same doz command (another release channel)"
@@ -37,8 +37,9 @@ class DozCanary < Formula
     <<~EOS
       Next: doz onboard   (checks this Mac, your agent's account, and prepares an image)
 
-      To upgrade: brew upgrade doz-canary   (doz also tells you when a new release is out:
-      the setting updates.mode — notify, auto or off; doz update --check looks now)
+      To upgrade: doz update   (it refreshes this tap first — a bare `brew upgrade doz-canary` can miss a
+      release for up to a day; doz also tells you when one is out: the setting updates.mode — notify,
+      auto or off; doz update --check looks now)
 
       Upgrading while a doz host runs is safe: it keeps running the previous build until
       `doz host restart` (sandboxes hibernate, and wake on the new build).

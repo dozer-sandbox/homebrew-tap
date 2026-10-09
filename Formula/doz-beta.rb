@@ -37,8 +37,9 @@ class DozBeta < Formula
     <<~EOS
       Next: doz onboard   (checks this Mac, your agent's account, and prepares an image)
 
-      To upgrade: brew upgrade doz-beta   (doz also tells you when a new release is out:
-      the setting updates.mode — notify, auto or off; doz update --check looks now)
+      To upgrade: doz update   (it refreshes this tap first — a bare `brew upgrade doz-beta` can miss a
+      release for up to a day; doz also tells you when one is out: the setting updates.mode — notify,
+      auto or off; doz update --check looks now)
 
       Upgrading while a doz host runs is safe: it keeps running the previous build until
       `doz host restart` (sandboxes hibernate, and wake on the new build).
